@@ -35,21 +35,34 @@ Accoutn Statement | .account_statement => returns date of deposit, withdrawals, 
 ### User Stories
 
 As a customer
+So I can manage my finances
 I'd like to create an account 
-So I can manage my finances 
 
   unit test: Creation of the Account class
   test passed. 
 
-  <!-- unit test. Customer tries to deposit invalid argument and gets and error.  -->
-  
+As a customer 
+So I can save my money
+I'd like to deposit money into my account
 
 As a customer 
-I'd like to deposit money into my account
-So I can save my money
+So that I can know my money is safe
+I'd like to get see confirmation of a successful deposit
 
   unit test. Customer can deposit money and get confirmation if successful.
   Test passed.
+
+As a customer 
+So that I enter the correct details 
+I'd like to make sure I'm protected against incorrect inputs. 
+
+  unit test. Customer will get error message if input is not a integer
+  
+
+
+  <!-- unit test. Customer tries to deposit invalid argument and gets and error.  -->
+  
+
 
 
 As a customer 

@@ -12,5 +12,9 @@ RSpec.describe Account do
     it 'confirms withdrawal was successful after made' do
       expect(subject.withdraw(5)).to eq 'withdrawal was successful'
     end
+
+    it 'returns error message if input value is not a number' do
+      expect{subject.withdraw("ten")}.to raise_error(ArgumentError)
+    end
   end
 end

@@ -5,8 +5,12 @@ class Account
   end
 
   def withdraw(debit_amount)
-    "withdrawal was successful"
-  end
 
+    if debit_amount.class == Integer
+      "withdrawal was successful"
+    else
+      raise ArgumentError
+    end
+  end
 
 end
