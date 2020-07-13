@@ -26,3 +26,22 @@ Build a program that can interact with the REPL that can do the following:
 10/01/2012 || 1000.00 ||        || 1000.00
 ```
 
+### Methods Table 
+
+Deposit           | .deposit(amount) => increase balance
+Withdraw          | .withdraw(amount) => decreases balance 
+Accoutn Statement | .account_statement => returns date of deposit, withdrawals, balance on given day.
+
+### User Stories
+
+As a customer
+I'd like to create an account 
+So I can manage my finances 
+
+As a customer 
+I'd like to deposit money into my account
+So I can save my money
+
+As a customer 
+I'd like to withdraw money from my account
+So I can use it to spend.
