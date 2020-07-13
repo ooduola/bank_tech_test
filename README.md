@@ -38,10 +38,23 @@ As a customer
 I'd like to create an account 
 So I can manage my finances 
 
+  unit test: Creation of the Account class
+  test passed. 
+
+  <!-- unit test. Customer tries to deposit invalid argument and gets and error.  -->
+  
+
 As a customer 
 I'd like to deposit money into my account
 So I can save my money
 
+  unit test. Customer can deposit money and get confirmation if successful.
+  Test passed.
+
+
 As a customer 
 I'd like to withdraw money from my account
 So I can use it to spend.
+  unit test. Customer can withdraw money and get confirmation if successful.
+  Test passed.
+ 
