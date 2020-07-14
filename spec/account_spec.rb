@@ -21,10 +21,12 @@ RSpec.describe Account do
       # expect { @account_one.deposit(20) }.to change { @account_one.balance }.from(0).to(20)
     end
 
-    # it 'should increment balance by 10 after second deposit' do
-    #   @account_one.deposit(20)
-    #   expect { @account_one.deposit(10) }.to change { @account_one.balance }.from(20).to(30)
-    # end
+    it 'should increment balance by 10 after second deposit' do
+      @account_one.deposit(20)
+      expect(@account_one.deposit(20)).to eq "deposited 20. balance now 40"
+
+      # expect { @account_one.deposit(10) }.to change { @account_one.balance }.from(20).to(30)
+    end
   end
 
   # context '#withdraw' do
