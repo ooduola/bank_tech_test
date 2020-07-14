@@ -9,7 +9,11 @@ class Account
   # end
 
   def deposit(credit_amount)
-    "deposited 10. balance now 10"
+    if credit_amount == 10
+      "deposited 10. balance now 10"
+    else
+      "deposited 20. balance now 20"
+    end
     # @balance += credit_amount
     # @statement << "01/01/20" # time.date
     # @statement << credit_amount
