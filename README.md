@@ -54,7 +54,7 @@ So I can know the history of my account activities
 I'd like the a statement to give me a summary of my transactions.
 
 Spec 
-- when a deposit is made a time date is created. 
+-when a deposit is made a time date is created. 
 
 
 

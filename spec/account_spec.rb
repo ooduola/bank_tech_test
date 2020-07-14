@@ -33,12 +33,22 @@ RSpec.describe Account do
   context '#statement' do
     it "should return date after deposit is made" do
       @account_one.deposit(10)
-      expect(@account_one.statement).to eq "01/01/20"
+      expect(@account_one.statement).to eq ["01/01/20", 10, "" , @account_one.balance]
     end
 
-    it 'should return zero if no deposit is made' do
-      expect(@account_one.statement).to eq nil
+    it 'should return nil if no deposit is made' do
+      expect(@account_one.statement).to eq []
     end
+
+    it "should return date after withdrawal is made" do
+      @account_one.withdraw(5)
+      expect(@account_one.statement).to eq ["01/01/20", "", 5 , @account_one.balance]
+    end
+
+    it 'should return nil if no deposit is made' do
+      expect(@account_one.statement).to eq []
+    end
+
 
   end
 end
