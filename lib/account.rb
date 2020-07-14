@@ -1,10 +1,12 @@
 class Account
 
   def balance
-    10
+    @balance = @credit_amount
   end
 
   def deposit(credit_amount)
+
+    @credit_amount = credit_amount
 
     # if credit_amount.class == Integer
     #   "deposit was successful"

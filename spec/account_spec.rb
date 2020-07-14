@@ -3,8 +3,14 @@ require 'account'
 RSpec.describe Account do
  
   context '#balance' do
-    it 'returns deposit_amount' do
+    it 'returns 10 deposited into account' do
       deposit_amount = 10
+      subject.deposit(deposit_amount)
+      expect(subject.balance).to eq deposit_amount
+    end
+
+    it 'returns increased deposit_amount' do
+      deposit_amount = 20
       subject.deposit(deposit_amount)
       expect(subject.balance).to eq deposit_amount
     end
