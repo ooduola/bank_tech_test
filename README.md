@@ -54,8 +54,15 @@ So I can know the history of my account activities
 I'd like the a statement to give me a summary of my transactions.
 
 Spec 
--when a deposit is made a time date is created. 
+-when a deposit is made a time date is created and stored.
+-when a deposit is made the credit amount is stored
+-when a deposit is made the balance at that point is stored.
+-when a deposit is made the debit amount is autmatically set to nil. 
 
+-when a withdrawal is made a time date is created and stored.
+-when a withdrawal is made the credit amount is stored
+-when a withdrawal is made the balance at that point is stored.
+-when a withdrawal is made the debit amount is autmatically set to nil. 
 
 
 
@@ -73,7 +80,7 @@ Spec
 
 ### User Stories - Withdraw and Deposit. 
 
-#### User story 1 
+#### User story 1 | Making Account Class
 
 As a customer
 So I can manage my finances
@@ -84,7 +91,7 @@ I'd like to create an account
 
   User story satisfied
 
-#### User story 2 
+#### User story 2 - Depositing and Balance
 
 As a customer 
 So I can save my money
