@@ -4,11 +4,12 @@ class Account
 
   def initialize
     @balance = 0
-    @statement = "01/01/20"
+    @statement = nil
   end
 
   def deposit(credit_amount)
     @balance += credit_amount
+    @statement = "01/01/20"
   end
 
   def withdraw(debit_amount)

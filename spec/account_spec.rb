@@ -36,9 +36,9 @@ RSpec.describe Account do
       expect(@account_one.statement).to eq "01/01/20"
     end
 
-    # it 'should return zero if no deposit is made' do
-    #   expect(@account_one.statement).to eq nil
-    # end
+    it 'should return zero if no deposit is made' do
+      expect(@account_one.statement).to eq nil
+    end
 
   end
 end
