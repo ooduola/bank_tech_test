@@ -34,6 +34,7 @@ Build a program that can interact with the REPL that can do the following:
 Account           | .deposit(amount) => increase balance
                   | .withdraw(amount) => decreases balance 
                   | .statement => returns date of deposit, withdrawals, balance on given day.
+                  | @balance
 
 ### User Stories  
 
