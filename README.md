@@ -41,6 +41,8 @@ I'd like to create an account
   unit test: Creation of the Account class
   test passed. 
 
+  User story satisfied
+
 As a customer 
 So I can save my money
 I'd like to deposit money into my account
@@ -60,6 +62,8 @@ I'd like to get see my balance increase after making a deposit.
   Code updated.
   Test passed. 
 
+  User story satisfied 
+
 
 As a customer 
 So that I can spend my money                                           
@@ -67,8 +71,13 @@ I'd like to withdraw money from my account
 
 As a customer 
 So that I can manage how much I'm spending
-I'd like the balance to decrease by the amount I'm withdrawing. 
+I'd like the balance to decrease by the amount withdrawn. 
 
-  unit test. Customer can withdraw 5 and balance will decrease by 5
-  Test passed.
+   Unit test. Customer can withdraw 5 and balance will decrease by 5. 
+   Code updated.
+   Test passed.
+
+   User story satisfied.
+
+
  
