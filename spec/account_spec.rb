@@ -12,5 +12,12 @@ RSpec.describe Account do
       subject.deposit(20)
       expect(subject.balance).to eq 20
     end
+
+    it 'returns 30 deposited over 2 transactions' do
+      account_one = Account.new
+      account_one.deposit(20)
+      account_one.deposit(10)
+      expect(account_one.balance).to eq 30
+    end
   end
 end
