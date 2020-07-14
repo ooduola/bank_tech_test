@@ -30,7 +30,7 @@ RSpec.describe Account do
   context '#statement' do
     it "should return statement of transaction after deposit is made" do
       @account_one.deposit(10)
-      expect(@account_one.statement).to eq ["01/01/20", 10, "" ,10]
+      expect(@account_one.statement).to eq 10
     end
   end
 

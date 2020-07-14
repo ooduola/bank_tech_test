@@ -31,6 +31,6 @@ class Account
   end
 
   def statement
-    ["01/01/20", 10, "", 10]
+    10
   end
 end

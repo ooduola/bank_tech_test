@@ -1,6 +1,6 @@
-require 'transaction_date'
+require 'transaction'
 
-RSpec.describe Date do
+RSpec.describe Transaction do
 
   it 'creates a new date when deposit is made' do
     
