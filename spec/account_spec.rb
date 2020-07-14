@@ -4,22 +4,13 @@ RSpec.describe Account do
  
   context '#balance' do
     it 'returns 10 deposited into account' do
-      deposit_amount = 10
-      subject.deposit(deposit_amount)
-      expect(subject.balance).to eq deposit_amount
+      subject.deposit(10)
+      expect(subject.balance).to eq 10
     end
 
-    it 'returns increased deposit_amount' do
-      deposit_amount = 20
-      subject.deposit(deposit_amount)
-      expect(subject.balance).to eq deposit_amount
+    it 'returns 20 deposited into account' do
+      subject.deposit(20)
+      expect(subject.balance).to eq 20
     end
   end
-
-  # context '#withdraw' do
-  #   it 'confirms withdrawal was successful after made' do
-  #     expect(subject.withdraw(5)).to eq 'withdrawal was successful'
-  #   end
-
-  # end
 end
