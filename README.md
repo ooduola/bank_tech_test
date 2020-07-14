@@ -32,7 +32,48 @@ Deposit           | .deposit(amount) => increase balance
 Withdraw          | .withdraw(amount) => decreases balance 
 Accoutn Statement | .account_statement => returns date of deposit, withdrawals, balance on given day.
 
-### User Stories
+account.statement =
+
+[ [date, credit_amount, debit_amount, balance_amount], [date, credit_amount, debit_amount, balance_amount]]
+
+# date_now = Time.new
+# date[value] = date_now
+# log << date
+# credit[value] = credit_amoutn
+# log << credit
+# debit[value] = debit_amount
+# log << debit_amount
+# log << balance 
+# statement << log
+
+
+## User story 4
+
+As a customer
+So I can know the history of my account activities 
+I'd like the a statement to give me a summary of my transactions.
+
+Spec 
+- when a deposit is made a time date is created. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### User Stories - Withdraw and Deposit. 
+
+#### User story 1 
 
 As a customer
 So I can manage my finances
@@ -42,6 +83,8 @@ I'd like to create an account
   test passed. 
 
   User story satisfied
+
+#### User story 2 
 
 As a customer 
 So I can save my money
@@ -64,6 +107,7 @@ I'd like to get see my balance increase after making a deposit.
 
   User story satisfied 
 
+#### User story 3 
 
 As a customer 
 So that I can spend my money                                           
@@ -80,4 +124,6 @@ I'd like the balance to decrease by the amount withdrawn.
    User story satisfied.
 
 
- 
+ #### User story 4 
+
+
