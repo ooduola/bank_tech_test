@@ -20,6 +20,8 @@ class Account
   end
 
   def withdraw(debit_amount)
+    @balance -= debit_amount
+    "withdrawn #{debit_amount}. balance now #{@balance}"
     # @balance -= debit_amount
     # @statement << "01/01/20" # time.date
     # @statement << ""
