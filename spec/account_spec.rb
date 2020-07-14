@@ -15,7 +15,7 @@ RSpec.describe Account do
       expect(@account_one.deposit(20)).to eq "deposited 20. balance now 20"
     end
 
-    it 'should increment balance by 10 after second deposit' do
+    it 'should return deposit of 20 and balance of 40 after second deposit' do
       @account_one.deposit(20)
       expect(@account_one.deposit(20)).to eq "deposited 20. balance now 40"
     end
@@ -27,11 +27,12 @@ RSpec.describe Account do
     end
   end
 
-  # context '#statement' do
-  #   it "should return date after deposit is made" do
-  #     @account_one.deposit(10)
-  #     expect(@account_one.statement).to eq ["01/01/20", 10, "" , @account_one.balance]
-  #   end
+  context '#statement' do
+    it "should return statement of transaction after deposit is made" do
+      @account_one.deposit(10)
+      expect(@account_one.statement).to eq ["01/01/20", 10, "" ,10]
+    end
+  end
 
   #   it 'should return nil if no deposit is made' do
   #     expect(@account_one.statement).to eq []
@@ -45,7 +46,5 @@ RSpec.describe Account do
   #   it 'should return nil if no deposit is made' do
   #     expect(@account_one.statement).to eq []
   #   end
-
-
   # end
 end

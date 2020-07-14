@@ -26,73 +26,30 @@ Build a program that can interact with the REPL that can do the following:
 10/01/2012 || 1000.00 ||        || 1000.00
 ```
 
-### Methods Table 
-
-Deposit           | .deposit(amount) => increase balance
-Withdraw          | .withdraw(amount) => decreases balance 
-Accoutn Statement | .account_statement => returns date of deposit, withdrawals, balance on given day.
-
-account.statement =
-
-[ [date, credit_amount, debit_amount, balance_amount], [date, credit_amount, debit_amount, balance_amount]]
-
-# date_now = Time.new
-# date[value] = date_now
-# log << date
-# credit[value] = credit_amoutn
-# log << credit
-# debit[value] = debit_amount
-# log << debit_amount
-# log << balance 
-# statement << log
+### Domain Table - Account
 
 
-## User story 4
+ Class            | Messages
+ -----------------------
+Account           | .deposit(amount) => increase balance
+                  | .withdraw(amount) => decreases balance 
+                  | .statement => returns date of deposit, withdrawals, balance on given day.
 
-As a customer
-So I can know the history of my account activities 
-I'd like the a statement to give me a summary of my transactions.
+### User Stories  
 
-Spec 
--when a deposit is made a time date is created and stored.
--when a deposit is made the credit amount is stored
--when a deposit is made the balance at that point is stored.
--when a deposit is made the debit amount is autmatically set to nil. 
-
--when a withdrawal is made a time date is created and stored.
--when a withdrawal is made the credit amount is stored
--when a withdrawal is made the balance at that point is stored.
--when a withdrawal is made the debit amount is autmatically set to nil. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### User Stories - Withdraw and Deposit. 
-
-#### User story 1 | Making Account Class
-
+### User story 1 - Making Account Class
+```
 As a customer
 So I can manage my finances
 I'd like to create an account 
+```
+-  unit test: Creation of the Account class
+-  test passed. 
 
-  unit test: Creation of the Account class
-  test passed. 
+User story satisfied
 
-  User story satisfied
-
-#### User story 2 - Depositing and Balance
-
+### User story 2 - Depositing and Balance
+```
 As a customer 
 So I can save my money
 I'd like to deposit money into my account
@@ -100,22 +57,22 @@ I'd like to deposit money into my account
 As a customer 
 So that I can know my money is safe
 I'd like to get see my balance increase after making a deposit.
+```
+-  unit test. Customer can deposit 10 and balance will return 10
+-  Test passed.
 
-  unit test. Customer can deposit 10 and balance will return 10
-  Test passed.
+-  unit test. Customer can deposit 20 and balance will return 20
+-  Code updated 
+-  Test passed. 
 
-  unit test. Customer can deposit 20 and balance will return 20
-  Code updated 
-  Test passed. 
+-  unit test. Customer can deposit 15 over 2 transactions and balance will return 30. 
+-  Code updated.
+-  Test passed. 
 
-  unit test. Customer can deposit 15 over 2 transactions and balance will return 30. 
-  Code updated.
-  Test passed. 
+User story satisfied 
 
-  User story satisfied 
-
-#### User story 3 
-
+### User story 3 - Withdrawing and Balance
+```
 As a customer 
 So that I can spend my money                                           
 I'd like to withdraw money from my account
@@ -123,14 +80,53 @@ I'd like to withdraw money from my account
 As a customer 
 So that I can manage how much I'm spending
 I'd like the balance to decrease by the amount withdrawn. 
+```
+-  Unit test. Customer can withdraw 5 and balance will return -5. 
+-  Code updated.
+-  Test passed.
 
-   Unit test. Customer can withdraw 5 and balance will decrease by 5. 
-   Code updated.
-   Test passed.
-
-   User story satisfied.
-
-
- #### User story 4 
+User story satisfied.
 
 
+ ### User story 4 - Statement
+```
+As a customer
+So I can know the history of my account activities 
+I'd like to print a statement.
+```
+- unit test: Customer can call statement and have it return all the transactions.
+- Code update: Created Statemnet method and hardcoded expected return.
+- Test passed.
+
+ ### User story 5 - Transaction
+
+ ```
+ As a customer 
+ So I can know when I made a transaction 
+ I'd like the statement to include a date. 
+ ```
+
+ Domain Model - Transaction
+
+ Class       | Messages
+ -----------------------
+ Transaction | @credit
+             | @date
+             | @debit
+             | @balance
+
+ - unit test: 
+  
+
+
+
+Spec | Transaction
+- when a deposit is made a time date is created and stored.
+- when a deposit is made the credit amount is stored
+- when a deposit is made the balance at that point is stored.
+- when a deposit is made the debit amount is autmatically set to nil. 
+
+- when a withdrawal is made a time date is created and stored.
+- when a withdrawal is made the credit amount is stored
+- when a withdrawal is made the balance at that point is stored.
+- when a withdrawal is made the debit amount is autmatically set to nil. 
