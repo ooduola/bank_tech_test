@@ -5,7 +5,7 @@
 Build a program that can interact with the REPL that can do the following:
 
 1. Deposits and withdrawal
-2. Account Statement printing;
+2. Account Statement printing
   a. date 
   b. amount 
   c. balance 
@@ -47,9 +47,9 @@ I'd like to deposit money into my account
 
 As a customer 
 So that I can know my money is safe
-I'd like to get see confirmation of a successful deposit
+I'd like to get see my balance increase after making a deposit.
 
-  unit test. Customer can deposit money and get confirmation if successful.
+  unit test. Customer can deposit money and see increase in balance.
   Test passed.
 
 As a customer 
@@ -57,7 +57,7 @@ So that I enter the correct details
 I'd like to make sure I'm protected against incorrect inputs. 
 
   unit test. Customer will get error message if input is not a integer
-  
+
 
 
   <!-- unit test. Customer tries to deposit invalid argument and gets and error.  -->
