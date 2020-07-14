@@ -6,21 +6,18 @@ RSpec.describe Account do
     @account_one = Account.new
   end
  
-  context '#balance' do
-    it 'returns 10 deposited into account' do
-      @account_one.deposit(10)
-      expect(@account_one.balance).to eq 10
+  context '#deposit' do
+    it "should increment balance by 10" do
+      expect { @account_one.deposit(10) }.to change { @account_one.balance }.from(0).to(10)
     end
 
-    it 'returns 20 deposited into account' do
-      @account_one.deposit(20)
-      expect(@account_one.balance).to eq 20
+    it 'should increment increment balance 20' do
+      expect { @account_one.deposit(20) }.to change { @account_one.balance }.from(0).to(20)
     end
 
-    it 'returns 30 deposited over 2 transactions' do
+    it 'should increment balance 10 after second deposit' do
       @account_one.deposit(20)
-      @account_one.deposit(10)
-      expect(@account_one.balance).to eq 30
+      expect { @account_one.deposit(10) }.to change { @account_one.balance }.from(20).to(30)
     end
   end
 end

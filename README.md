@@ -49,25 +49,26 @@ As a customer
 So that I can know my money is safe
 I'd like to get see my balance increase after making a deposit.
 
-  unit test. Customer can deposit money and see increase in balance.
+  unit test. Customer can deposit 10 and balance will return 10
   Test passed.
 
-As a customer 
-So that I enter the correct details 
-I'd like to make sure I'm protected against incorrect inputs. 
+  unit test. Customer can deposit 20 and balance will return 20
+  Code updated 
+  Test passed. 
 
-  unit test. Customer will get error message if input is not a integer
-
-
-
-  <!-- unit test. Customer tries to deposit invalid argument and gets and error.  -->
-  
-
+  unit test. Customer can deposit 15 over 2 transactions and balance will return 30. 
+  Code updated.
+  Test passed. 
 
 
 As a customer 
+So that I can spend my money                                           
 I'd like to withdraw money from my account
-So I can use it to spend.
-  unit test. Customer can withdraw money and get confirmation if successful.
+
+As a customer 
+So that I can manage how much I'm spending
+I'd like the balance to decrease by the amount I'm withdrawing. 
+
+  unit test. Customer can withdraw 5 and balance will decrease by 5
   Test passed.
  
