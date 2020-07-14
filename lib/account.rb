@@ -14,4 +14,8 @@ class Account
     @balance -= debit_amount
   end
 
+  def statement
+    "01/01/20"
+  end
+
 end
