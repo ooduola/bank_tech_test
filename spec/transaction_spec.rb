@@ -14,4 +14,9 @@ RSpec.describe Transaction do
     expect(subject.display).to eq '01/07/2020||1000 || || '
   end
 
+  it 'returns debit amount when initialized with debit argument' do
+    subject = described_class.new(debit: 500)
+    expect(subject.display).to eq '01/07/2020|| ||500 || '
+  end
+
 end

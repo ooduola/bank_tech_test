@@ -118,29 +118,35 @@ I will come back to this later.
              | @debit
              | @balance
 
- - unit test: 
+- unit test: 
 
- ```
- As a customer
- So I can track each of my transactions
- I'd like my transaction to include a date.
- ```
- 
- Unit test: Transation object returns a new date when initialized.
- Code implemented.
- Test passed. Green. 
+```
+As a customer
+So I can track each of my transactions
+I'd like my transaction to include a date.
+```
 
- ``` 
- As a customer
- So I can track each deposit
- I'd like my transaction to include the credit amount.
- ```
+Unit test: Transation object returns a new date when initialized.
+Code implemented.
+Test passed. Green. 
 
- Unit test: Transaction object returns credit amount when initialized.
- 
-  
+``` 
+As a customer
+So I can track each deposit
+I'd like my transaction to include the credit amount.
+```
 
+Unit test: Transaction object returns credit amount when initialized.
+implemented code.
+Test passed. Green.
 
+```
+As a customer 
+So I can track each deposit
+I'd like my transaction to include the credit amount.
+```
+
+Unit test: 
 
 Spec | Transaction
 - when a deposit is made a time date is created and stored.
