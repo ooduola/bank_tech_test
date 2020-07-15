@@ -33,7 +33,7 @@ Build a program that can interact with the REPL that can do the following:
  -----------------------
 Account           | .deposit(amount) => increase balance
                   | .withdraw(amount) => decreases balance 
-                  | .statement => returns date of deposit, withdrawals, balance on given day.
+                  | .statement => date, deposit, withdrawals, balance
                   | @balance
 
 ### User Stories  
@@ -89,7 +89,7 @@ I'd like the balance to decrease by the amount withdrawn.
 User story satisfied.
 
 
- ### User story 4 - Statement
+### User story 4 - Statement
 ```
 As a customer
 So I can know the history of my account activities 
@@ -99,7 +99,9 @@ I'd like to print a statement.
 - Code update: Created Statemnet method and hardcoded expected return.
 - Test passed.
 
- ### User story 5 - Transaction
+I will come back to this later. 
+
+### User story 5 - Transaction
 
  ```
  As a customer 
@@ -117,6 +119,25 @@ I'd like to print a statement.
              | @balance
 
  - unit test: 
+
+ ```
+ As a customer
+ So I can track each of my transactions
+ I'd like my transaction to include a date.
+ ```
+ 
+ Unit test: Transation object returns a new date when initialized.
+ Code implemented.
+ Test passed. Green. 
+
+ ``` 
+ As a customer
+ So I can track each deposit
+ I'd like my transaction to include the credit amount.
+ ```
+
+ Unit test: Transaction object returns credit amount when initialized.
+ 
   
 
 
