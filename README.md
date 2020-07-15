@@ -103,6 +103,12 @@ I will come back to this later.
 
 ### User story 5 - Transaction
 
+Spec | Transaction
+- when a deposit is made a time date is created and stored.
+- when a deposit is made the credit amount is stored
+- when a deposit is made the balance at that point is stored.
+- when a deposit is made the debit amount is autmatically set to nil. 
+
  ```
  As a customer 
  So I can know when I made a transaction 
@@ -142,19 +148,23 @@ Test passed. Green.
 
 ```
 As a customer 
-So I can track each deposit
-I'd like my transaction to include the credit amount.
+So I can track each withdrawals
+I'd like my transaction to include the debit amount.
 ```
 
-Unit test: 
+Unit test: Transaction objects returns debit amount when initialized
+Code implemented.
+Test passed. Green
 
-Spec | Transaction
-- when a deposit is made a time date is created and stored.
-- when a deposit is made the credit amount is stored
-- when a deposit is made the balance at that point is stored.
-- when a deposit is made the debit amount is autmatically set to nil. 
+```
+As a customer 
+So I can track my balance after each transaction
+I'd like my transaction to include the balance amount.
+```
 
-- when a withdrawal is made a time date is created and stored.
-- when a withdrawal is made the credit amount is stored
-- when a withdrawal is made the balance at that point is stored.
-- when a withdrawal is made the debit amount is autmatically set to nil. 
+Unit test: Transaction object returns balance amount when initalized.
+Code implemented
+Test passed. Green
+
+
+

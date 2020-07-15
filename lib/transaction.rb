@@ -4,10 +4,11 @@ class Transaction
     @debit = debit
     @credit = credit
     @balance = balance
+    @time = Time.now
   end
 
   def display
-    "01/07/2020||#{@credit} ||#{@debit} ||#{@balance} "
+    "#{@time}||#{@credit} ||#{@debit} ||#{@balance} "
   end
 
 

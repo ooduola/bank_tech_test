@@ -10,6 +10,7 @@ class Account
 
   def deposit(credit_amount)
     @balance += credit_amount
+    Transaction.new(credit: credit_amount, balance: @balance)
     "deposited #{credit_amount}. balance now #{@balance}"
   
     # @statement << "01/01/20" # time.date
@@ -21,6 +22,7 @@ class Account
 
   def withdraw(debit_amount)
     @balance -= debit_amount
+    Transaction.new(debit: debit_amount, balance: @balance)
     "withdrawn #{debit_amount}. balance now #{@balance}"
     # @balance -= debit_amount
     # @statement << "01/01/20" # time.date
