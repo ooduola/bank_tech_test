@@ -12,7 +12,6 @@ class Account
 
   def deposit(credit_amount)
     @balance += credit_amount
-    Transaction.new(credit: credit_amount, balance: @balance)
     transaction = Transaction.new(credit: credit_amount, balance: @balance)
     @account_activity << transaction.display
     "deposited #{credit_amount}. balance now #{@balance}"
@@ -20,6 +19,8 @@ class Account
 
   def withdraw(debit_amount)
     @balance -= debit_amount
+    transaction = Transaction.new(debit: debit_amount, balance: @balance)
+    @account_activity << transaction.display
     "withdrawn #{debit_amount}. balance now #{@balance}"
   end
 
