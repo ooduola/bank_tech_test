@@ -1,38 +1,33 @@
-class Account
+# frozen_string_literal: true
 
+require_relative 'transaction'
+
+class Account
   # attr_reader :print_statement
 
   def initialize
     @balance = 0
-  #   @statement = []
-  #   @print_statement = []
+    @account_activity = []
   end
 
   def deposit(credit_amount)
     @balance += credit_amount
     Transaction.new(credit: credit_amount, balance: @balance)
+    transaction = Transaction.new(credit: credit_amount, balance: @balance)
+    @account_activity << transaction.display
     "deposited #{credit_amount}. balance now #{@balance}"
-  
-    # @statement << "01/01/20" # time.date
-    # @statement << credit_amount
-    # @statement << ""
-    # @statement << @balance
-    
   end
 
   def withdraw(debit_amount)
     @balance -= debit_amount
-    Transaction.new(debit: debit_amount, balance: @balance)
     "withdrawn #{debit_amount}. balance now #{@balance}"
-    # @balance -= debit_amount
-    # @statement << "01/01/20" # time.date
-    # @statement << ""
-    # @statement << debit_amount
-    # @statement << @balance
-    # @print_statement << @statement
   end
 
   def statement
-    10
+    if @account_activity.empty?
+      'no transactions made'
+    else
+      @account_activity
+    end
   end
 end

@@ -1,6 +1,7 @@
-class Transaction
+# frozen_string_literal: true
 
-  def initialize(credit: nil, debit: nil, balance: nil) 
+class Transaction
+  def initialize(credit: nil, debit: nil, balance: nil)
     @debit = debit
     @credit = credit
     @balance = balance
@@ -10,6 +11,4 @@ class Transaction
   def display
     "#{@time}||#{@credit} ||#{@debit} ||#{@balance} "
   end
-
-
 end
