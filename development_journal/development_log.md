@@ -84,7 +84,7 @@ I'd like to print a statement.
 > -  Code: Created Statemnet method and hardcoded expected return.
 > - Test passed.
 
-**(I will come back to this later.)**
+**(*I will come back to this later.)**
 
 ---
 
@@ -173,7 +173,7 @@ I'd like my transaction to include the balance amount.
  - Each transaction is now stored in "account_activity" instant variable.
  
 ### Statement Refactor with Transaction
- - Statement now interates through "account_activity" and prints the elements stored to output. 
+ - *Statement now interates through "account_activity" and prints the elements stored to output. 
 
 ## Feature test
 

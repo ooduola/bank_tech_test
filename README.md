@@ -1,5 +1,7 @@
 # Bank Tech Test
 
+[![Coverage Status](https://coveralls.io/repos/github/ooduola/bank_tech_test/badge.svg?branch=master)](https://coveralls.io/github/ooduola/bank_tech_test?branch=master)
+
 ## Specification
 
 Build a program that can interact with the REPL that can do the following:
