@@ -48,7 +48,7 @@ Once in IRB:
 ```
 
 ## How I built this program
-[Please find my development log to building this program here.](https://github.com/ooduola/bank_tech_test/blob/master/development_journal/development_log.md)
+Please find my development log to building this program [here.](https://github.com/ooduola/bank_tech_test/blob/master/development_journal/development_log.md)
 
 
 ## Planning

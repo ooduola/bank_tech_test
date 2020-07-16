@@ -29,20 +29,20 @@ RSpec.describe Account do
   end
 
   context '#statement' do
+
+    before(:each) {allow(Time).to receive(:now).and_return('01/07/20')}
+      
     it 'should return statement of transaction after deposit is made' do
-      allow(Time).to receive(:now).and_return('01/07/2020')
       @account_one.deposit(10)
       expect(@account_one.statement).to include "#{Time.now}||10 || ||10 "
     end
 
     it 'should return statement of transaction after withdrawal is made' do
-      allow(Time).to receive(:now).and_return('01/07/2020')
       @account_one.withdraw(5)
       expect(@account_one.statement).to include "#{Time.now}|| ||5 ||-5 "
     end
 
     it 'should return nothing if no transacations have been made' do
-      allow(Time).to receive(:now).and_return('01/07/2020')
       expect(@account_one.statement).to include 'date   || credit  || debit  || balance'
     end
   end

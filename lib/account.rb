@@ -29,7 +29,7 @@ class Account
       HEADER
     else
       print HEADER
-      @account_activity.each { |transaction| print transaction + "\n" }
+      @account_activity.each { |transaction|  print transaction + "\n" }
     end
   end
 end
