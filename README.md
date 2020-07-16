@@ -1,6 +1,5 @@
 # Bank Tech Test
 
-[![Coverage Status](https://coveralls.io/repos/github/ooduola/bank_tech_test/badge.svg?branch=master)](https://coveralls.io/github/ooduola/bank_tech_test?branch=master)
 
 ## Specification
 
