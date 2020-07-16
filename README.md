@@ -28,6 +28,25 @@ Build a program that can interact with the REPL that can do the following:
 10/01/2012 || 1000.00 ||        || 1000.00
 ```
 
+## Quick Start Guide
+
+1. Clone this repository to your local machine.
+2. Enter into the root folder.
+3. Install the ruby dependencies with:
+
+```shell
+bundle install
+```
+4. Launch IRB:
+```shell
+irb
+```
+Once in IRB:
+```shell
+> require './lib/account.rb'
+> account = Account.new
+```
+
 ## How I built this program
 [Please find my development log to building this program here.](https://github.com/ooduola/bank_tech_test/blob/master/development_journal/development_log.md)
 
