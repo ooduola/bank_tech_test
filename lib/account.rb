@@ -13,23 +13,23 @@ class Account
   def deposit(credit_amount)
     @balance += credit_amount
     transaction = Transaction.new(credit: credit_amount, balance: @balance)
-    @account_activity << transaction.display
+    @account_activity << transaction
     "deposited #{credit_amount}. balance now #{@balance}"
   end
 
   def withdraw(debit_amount)
     @balance -= debit_amount
     transaction = Transaction.new(debit: debit_amount, balance: @balance)
-    @account_activity << transaction.display
+    @account_activity << transaction
     "withdrawn #{debit_amount}. balance now #{@balance}"
   end
 
   def statement
     if @account_activity.empty?
-      HEADER
+      print HEADER
     else
       print HEADER
-      @account_activity.each { |transaction|  print transaction + "\n" }
+      @account_activity.each { |transaction|  print transaction.display + "\n" }
     end
   end
 end

@@ -3,9 +3,7 @@
 require 'account'
 
 RSpec.describe Account do
-  before(:each) do
-    @account_one = Account.new
-  end
+  before(:each) {@account_one = Account.new}
 
   context '#deposit' do
     it 'should return balance and deposit eq 10' do
@@ -34,16 +32,16 @@ RSpec.describe Account do
       
     it 'should return statement of transaction after deposit is made' do
       @account_one.deposit(10)
-      expect(@account_one.statement).to include "#{Time.now}||10 || ||10 "
+      expect { @account_one.statement }.to output("date   || credit  || debit  || balance\n#{Time.now}||10 || ||10 \n").to_stdout
     end
 
     it 'should return statement of transaction after withdrawal is made' do
       @account_one.withdraw(5)
-      expect(@account_one.statement).to include "#{Time.now}|| ||5 ||-5 "
+      expect { @account_one.statement }.to output("date   || credit  || debit  || balance\n#{Time.now}|| ||5 ||-5 \n").to_stdout
     end
 
     it 'should return nothing if no transacations have been made' do
-      expect(@account_one.statement).to include 'date   || credit  || debit  || balance'
+      expect {@account_one.statement}.to output(/'date   || credit  || debit  || balance'/n).to_stdout
     end
   end
 end
