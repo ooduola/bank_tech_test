@@ -11,4 +11,5 @@ class Transaction
   def display
     "#{@time}||#{@credit} ||#{@debit} ||#{@balance} "
   end
+
 end
