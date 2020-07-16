@@ -14,3 +14,6 @@ end
 gem 'simplecov', require: false, group: :test
 
 gem 'coveralls', require: false
+
+gem "rest-client", ">= 1.8.0"
+
