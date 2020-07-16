@@ -99,3 +99,4 @@ I'd like my transaction to include the balance amount.
 - I could have possibly done a better job refactoring my code. (introducing a statement class for example)
 - I struggled to get the strftime method to work and still have passing test. Currently the time is outputting '2020-07-16 11:49:49 +0100'.
 - I also need to add some edge cases such as minimum balance and raising errors when trying to withdraw money greater than balance.
+- I also needed to format my integer values to 2 decimal places. 
