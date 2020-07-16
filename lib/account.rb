@@ -3,7 +3,8 @@
 require_relative 'transaction'
 
 class Account
-  # attr_reader :print_statement
+
+  HEADER = "date   || credit  || debit  || balance\n"
 
   def initialize
     @balance = 0
@@ -26,9 +27,11 @@ class Account
 
   def statement
     if @account_activity.empty?
-      'no transactions made'
+      HEADER
     else
-      @account_activity
+      print HEADER
+      @account_activity.each { |transaction| print transaction + "\n" } 
     end
   end
+
 end

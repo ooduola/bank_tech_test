@@ -12,4 +12,3 @@ end
 # gem "rails"
 
 gem 'simplecov', require: false, group: :test
-

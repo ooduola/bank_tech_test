@@ -3,10 +3,8 @@
 require 'transaction'
 
 RSpec.describe Transaction do
-  before(:each) do
-  end
 
-  date = '01/07/2020'
+  date = '01/07/20'
 
   it 'creates a new date when initalised' do
     allow(Time).to receive(:now).and_return(date)
