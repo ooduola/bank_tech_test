@@ -91,11 +91,10 @@ I'd like to print a statement.
 ## Transaction
 
 Specification of the Transaction class
-- when a deposit/withdrawal is made a time date is created and stored.
+- when a deposit/withdrawal is made a time date is added and stored for every transaction.
 - when a deposit/withdrawal is made the credit amount is stored
 - when a deposit/withdrawal is made the balance at that point is stored.
-- when a deposit/withdrawal is made the debit amount is autmatically set to nil. 
-
+- when a deposit/withdrawal is made the debit amount is added and stored.
 
 ### Domain Model - Transaction
 
