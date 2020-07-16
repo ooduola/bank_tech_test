@@ -176,7 +176,9 @@ I'd like my transaction to include the balance amount.
 ### Statement Refactor with Transaction
  - Statement now interates through "account_activity" and prints the elements stored to output. 
 
+## Feature test
 
+- Added a feature test to make sure the account object is outputting the correct information to the REPL.
 
 
 

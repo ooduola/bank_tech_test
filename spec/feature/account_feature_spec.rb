@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require './lib/account'
 
 describe 'feature test ' do
-
   subject(:account) { Account.new }
 
   it 'print statement after deposit and withdrawal is made' do

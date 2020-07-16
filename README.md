@@ -26,7 +26,13 @@ Build a program that can interact with the REPL that can do the following:
 10/01/2012 || 1000.00 ||        || 1000.00
 ```
 
-## Domain Table - Account
+## How I built this program
+[Please find my development log to building this program here.](https://github.com/ooduola/bank_tech_test/blob/master/development_journal/development_log.md)
+
+
+## Planning
+
+### Domain Table - Account
 
 | Class       | Messages  |
 | :---        |  ----:    |
@@ -43,9 +49,6 @@ Build a program that can interact with the REPL that can do the following:
 |             | @date     |
 |             | @debit    |
 |             | @balance  |
-
-
-              
 
 ### User Stories  
 ```

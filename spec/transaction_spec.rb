@@ -3,7 +3,6 @@
 require 'transaction'
 
 RSpec.describe Transaction do
-
   date = '01/07/20'
 
   it 'creates a new date when initalised' do
